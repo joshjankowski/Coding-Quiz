@@ -1,0 +1,90 @@
+* {
+    font-family: 'Righteous', cursive;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: grey;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+}
+
+button {
+    margin: 10px;
+}
+
+h1 {
+    font-size: 3.2rem;
+    color: white;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+.quizback {
+    width: 60rem;
+    margin: 2rem;
+    background-image: url("./assets/flying.gif");
+    background-position: center;
+}
+
+.quiz {
+    color: white;
+}
+
+.menu {
+    background-color: #FFFFFF;
+}
+
+.btn {
+    background-color: #fa64d7;
+}
+
+.btn:hover {
+    background-color: #FFFFFF;
+}
+
+#timer {
+    color: white;
+}
+
+.choice-text:active {
+    background-color: #ffffff;
+}
+
+.correct {
+    background-color: #15a805;
+}
+
+.incorrect {
+    background-color: #f22229;
+}
+
+.choice-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.scoring {
+    display: flex;
+}
+
+.saved-name {
+    padding: 10px;
+}
+
+.saved-score {
+    padding: 10px;
+}

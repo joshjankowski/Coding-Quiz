@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <title>RuPaul's Drag Race Quiz</title>
+</head>
+
+<body>
+  <section class="quizback">
+    <h1>
+      <img src="./images/rupaulsdragrace.PNG" width="300px">
+    </h1>
+    <div class="losing-image"></div>
+    <div class="quiz" style="display: none;">
+      <div class="question">What is this question?</div>
+
+      <!--This is where the questions will go.-->
+      <div class="choice-container">
+        <p class="choice-prefix">A</p>
+        <p class="choice-text" data-number="1">Choice 1</p>
+      </div>
+
+      <div class="choice-container">
+        <p class="choice-prefix">B</p>
+        <p class="choice-text" data-number="2">Choice 2</p>
+      </div>
+
+      <div class="choice-container">
+        <p class="choice-prefix">C</p>
+        <p class="choice-text" data-number="3">Choice 3</p>
+      </div>
+
+      <div class="choice-container">
+        <p class="choice-prefix">D</p>
+        <p class="choice-text" data-number="4">Choice 4</p>
+      </div>
+
+    </div>
+    <button class="btn" id="begin">Start Quiz!</button>
+    <div id="timer">
+      <!--This is where the timer will go.-->
+    </div>
+  </section>
+  <section class="menu">
+    <h2>Menu</h2>
+    <button class="btn" id="start-over">Start Over</button>
+    <button class="btn" id="reset">Reset</button>
+    <button class="btn" id="view-scoreboard">View Scoreboard</button>
+
+    <!--This is where the high score will go.-->
+
+    <div class="highscore"></div>
+    <div class="name">
+      <label for="name">Name</label>
+      <input id="name" type="text" class="input">
+      <button type="submit" class="submit">Submit</button>
+    </div>
+    <div class="leader-board">High Score</div>
+    <br>
+    <div class="scoring">
+    <div class="saved-name"></div>
+    <div class="saved-score"></div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
