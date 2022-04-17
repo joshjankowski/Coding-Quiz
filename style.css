@@ -7,6 +7,7 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
   background-color: grey;
+  background-image: url("./assets/flying.gif");
 }
 
 section {
@@ -30,13 +31,13 @@ h1 {
 }
 
 h2 {
-  font-size: 2.2rem;
+  font-size: 1.2rem;
 }
 
 .quizback {
-  width: 60rem;
+  width: 40rem;
   margin: 2rem;
-  background-image: url("./assets/flying.gif");
+  background-color: rgb(72, 2, 62);
   background-position: center;
 }
 
@@ -50,6 +51,8 @@ h2 {
 
 .btn {
   background-color: #fa64d7;
+  width: 12rem;
+  height: 2rem;
 }
 
 .btn:hover {
@@ -66,10 +69,12 @@ h2 {
 
 .correct {
   background-color: #15a805;
+  border-radius: 10px;
 }
 
 .incorrect {
   background-color: #f22229;
+  border-radius: 10px;
 }
 
 .choice-container {

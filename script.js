@@ -1,7 +1,5 @@
 const shade = new Audio("soundfx/itschocolate.mp3"); // Adding Shade Sound
 const begin = document.querySelector("#begin"); // Grabbing Begin Button
-const startOver = document.querySelector("#start-over"); // Grabbing Start Over Button
-const reset = document.querySelector("#reset"); // Grabbing Reset Button
 const viewScoreboard = document.querySelector("#view-scoreboard"); // View Scoreboard Button
 const time = document.querySelector("#timer"); // Grabbing Timer location
 const highscore = document.querySelector(".highscore"); // Grabbing High Score Location
@@ -120,7 +118,7 @@ let questions = [
     answer: 2,
   },
   {
-    question: "Who many episodes are there in season 14?",
+    question: "How many episodes are there in season 14?",
     choice1: "7",
     choice2: "10",
     choice3: "16",
@@ -215,8 +213,6 @@ begin.addEventListener("click", function () {
   startGame();
   // jumboTron.style.display = none;
 });
-
-viewScoreboard.addEventListener("click", function () {});
 
 const savedName = document.querySelector(".saved-name");
 const savedScore = document.querySelector(".saved-score");
