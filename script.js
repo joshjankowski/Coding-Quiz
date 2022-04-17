@@ -103,7 +103,8 @@ let questions = [
     answer: 4,
   },
   {
-    question: "Who has been on Season 2, AllStars 1, AllStars 5 and Uk VS the World?",
+    question:
+      "Who has been on Season 2, AllStars 1, AllStars 5 and Uk VS the World?",
     choice1: "Monet Xchange",
     choice2: "Jujubee",
     choice3: "Jimbo",
@@ -225,17 +226,16 @@ const storedInput = localStorage.getItem("name");
 
 if (input) {
   savedName.textContent = storedInput;
-  savedScore.textContent = SCORE_POINTS;
+  savedScore.appendChild(highscore);
 }
 
 input.addEventListener("input", (letters) => {
   savedName.textContent = letters.target.value;
-  savedScore.textContent = highscore;
 });
 
 const saveToLocalStorage = () => {
   localStorage.setItem("name", savedName.textContent);
-  //   localStorage.setItem('score', score.textContent)
+  localStorage.setItem('score', highscore.textContent);
 };
 
 submit.addEventListener("click", saveToLocalStorage);
