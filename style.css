@@ -83,7 +83,13 @@ h2 {
 }
 
 .scoring {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "header header";
+  background-color:#fa64d7;
+  padding: 10px;
+  border-style: solid;
+  border-color: black;
 }
 
 .saved-name {
@@ -92,4 +98,8 @@ h2 {
 
 .saved-score {
   padding: 10px;
+}
+
+.last-saved-score {
+  grid-area: header;
 }

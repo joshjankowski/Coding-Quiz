@@ -49,7 +49,7 @@ highscore.textContent = score;
 // Questions to ask made into objects.
 let currentQuestion = {};
 let acceptingAnswers = true;
-let questionCounter = 0; // Holds the number of questions you are on
+let questionCounter = 0; // Holds the number of questions you are on if wanting to use later
 let availableQuestions = [];
 let questions = [
   {
@@ -138,6 +138,7 @@ let questions = [
 const SCORE_POINTS = 100;
 const MAX_QUESTIONS = 10;
 
+// Function used to initialize the game.
 function startGame() {
   questionCounter = 0;
   score = 0;
@@ -148,6 +149,7 @@ function startGame() {
   setTime();
 }
 
+// Function used to randomize the questions.
 function getNewQuestion() {
   if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
     localStorage.setItem("score", score);
@@ -207,13 +209,13 @@ incrementScore = (num) => {
   score += num;
   highscore.innerText = score;
 };
-console.log(score);
 
+// Determine what happens when you press start
 begin.addEventListener("click", function () {
   startGame();
-  // jumboTron.style.display = none;
 });
 
+// Setting up the last saved score
 const savedName = document.querySelector(".saved-name");
 const savedScore = document.querySelector(".saved-score");
 const submit = document.querySelector(".submit");
